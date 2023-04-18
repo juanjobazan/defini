@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/logo_png.png">
+    <title>Mr. Burger</title>
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg  nav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><img src="./img/logo_png.png" width="70"
+                        height="70"><strong><a class="navbar-brand" href="./index.html">Mr. Burger</a></strong></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link active text-dark" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        
+                        <!-- Button contacto y maps modal -->
+                        <button type="button" class="btn d-flex justify-content-start align-items-start" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            Contacto
+                        </button>
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Puedes contactarnos por:
+                                        </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="form-alta">
+                                            <div class="modal-body">
+                                                <label for="">Correo electronico</label>
+                                                <input type="text" class="form-control" id="exampleInputEmail1"
+                                                    aria-describedby="emailHelp" placeholder="Ingrese su Email"
+                                                    required>
+                                                    <label for="">Nombre</label>
+                                                <input type="text" class="form-control" placeholder="Ingrese su nombre completo"
+                                                    required>
+                                                    <label for="">Teléfono</label>
+                                                <input type="text" class="form-control" placeholder="Ingrese su teléfono"
+                                                    required>
+                                                    <label for="">Motivo del contacto</label>
+                                                <input type="text" class="form-control" placeholder="Ingrese su motivo"
+                                                    required>
+                                                    <label for="">Descripción</label>
+                                                <input type="text" class="form-control" 
+                                                    required>
+                                                <h6>Ingrese los detalles de esta solicitud y un integrante de nuestro personal de soporte reponderá en breve.</h6>
+                                                <h4 class="h5-article">Aqui te dejamos un mapa para encontrarnos</h4>
+                                                 <div class="d-flex"><iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28490.480875033994!2d-65.29084612089842!3d-26.798252700000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225de35c79dbd1%3A0xe0559999136f608a!2sMR.BURGUERS!5e0!3m2!1ses-419!2sar!4v1680923108218!5m2!1ses-419!2sar"
+                                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                                referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                                                <button type="button" class="btn btn-danger ">Enviar
+                                            </button>
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="./html/sobrenos.html">Sobre nosotros</a>
+                        </li>
+
+
+                    </ul>
+                 <!--  iniciar sesion-->
+                    <div class="d-flex">
+
+                       <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                            aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header formularioClase">
+                                        <h5 class="modal-title" id="exampleModalToggleLabel"><img
+                                                src="./img/logo_png.png" width="50" height="50">Iniciar Sesion</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <!-- INICIAR SESION -->
+                                    <div class="modal-body formularioClase">
+                                        <div class="row">
+                                            <div class="col-xs-6 col-lg-6 col-md-6">
+                                                <div class="mb-3">
+                                                    <a href="./error 404/error404.html"><button type="submit" class="btn btn-outline-info">Facebook</button></a>
+                                                    <a href="./error 404/error404.html"><button type="submit" class="btn btn-outline-danger">Google</button></a>
+                                                </div>
+                                                <div class="well">
+                                                    <form class="mb-3">
+                                                        <div class="form-group">
+                                                            <label for="username" class="control-label">Usuario</label>
+                                                            <input type="text" class="form-control" id="username"
+                                                                name="username" placeholder="Ingrese su usuario"
+                                                                maxlength="30" minlength="8" required>
+                                                            <span class="help-block"></span>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="password"
+                                                                class="control-label">Contraseña</label>
+                                                            <input type="password" class="form-control" id="password"
+                                                                name="password" placeholder="Ingrese su contraseña"
+                                                                maxlength="50" minlength="8" required>
+
+                                                        </div>
+
+
+                                                        <button type="submit"
+                                                            class="btn btn-danger mt-4">Iniciar Sesion</button>
+                                                        <a href="./html/usuario.html">.</a>
+                                                        <a href="./html/admin.html">.</a>
+                                                    </form>
+                                                    <div class="modal-footer col-md-12 col-xs-12 text-left">
+                                                        <button class="btn" data-bs-target="#exampleModalToggle2"
+                                                            data-bs-toggle="modal">Olvide
+                                                            mi contraseña</button>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 col-lg-6 col-md-6">
+                                                <img src="./img/Riccisima.png" class="img-fluid"
+                                                    alt="Responsive image">
+                                            </div>
+                                        </div>
+                                    </div> 
+ 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                            aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+
+                                    <div class="modal-body formularioClase">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header formularioClase">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel22">
+                                                        <img src="./img/logo_png.png" width="50" height="50">Mr Burger
+                                                    </h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <form class="form-alta">
+                                                    <div class="modal-body">
+                                                        <label for="">*Email:</label>
+                                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp" placeholder="Ingrese su Email"
+                                                            required>
+                                                        <p>Recibiras un email para restablecer tu
+                                                            contraseña</p>
+                                                        <button type="submit" class="btn btn-danger">Enviar
+                                                            E-mail</button>
+                                                    </div>
+
+                                                </form>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn boton d-flex btn-iniciar"  href="./html/login.html" role="button">Iniciar Sesion</a>
+                    
+
+
+
+
+
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn boton" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Registrarme
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel"><img
+                                                src="./img/logo_png.png" width="50" height="50">Registrarme </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body formularioClase">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">Nombre de
+                                                    usuario</label>
+                                                <input type="text" class="form-control" id="exampleInputEmail1"
+                                                    aria-describedby="emailHelp" maxlength="50" minlength="5" required
+                                                    placeholder="Ingrese su nombre de usuario">
+
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">Correo</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                                    aria-describedby="emailHelp" maxlength="50" minlength="10" required
+                                                    placeholder="Ingrese su direccion de correo electronico">
+
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                                    required maxlength="80" minlength="8"
+                                                    placeholder="Ingrese su contraseña">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleInputPassword1" class="form-label">Repetir
+                                                    Contraseña</label>
+                                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                                    required maxlength="80" minlength="8"
+                                                    placeholder="Repita su contraseña">
+                                            </div>
+
+                                            <button type="submit" class="btn btn-danger">Confirmar</button>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer formularioClase">
+                                        <h1 class="modal-title">Ya tengo cuenta<a href="./html/login.html"> INICIAR
+                                                SESION</a></h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin Modal -->
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="col-12">
+                <div>
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <img src="https://s3.eu-central-1.amazonaws.com/www.burgerking.com.mx/wp-content/uploads/sites/3/2021/02/24095706/1200x800_03_WhopperConQueso-1-1.png"
+                                    class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>La Argenta</h2>
+                                    <h4>Porque los clasicos nunca mueren, por eso llegó La Argenta sazonada por los
+                                        Dioses.</h4>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="https://s3-eu-central-1.amazonaws.com/www.burgerking.com.ar.v2/wp-media-folder-burger-king-argentina//home/ubuntu/preview/menu-app/frontend/apps/marketing-website-wordpress-app/web/app/uploads/sites/5/BondiolitaKing-morron.png"
+                                    class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>La MessiBurger</h2>
+                                    <h4>Una hamburgueza tan esperada, como la vuelta de la Copa del Mundo.</h4>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://s3-eu-central-1.amazonaws.com/www.burgerking.com.ar.v2/wp-media-folder-burger-king-argentina//home/ubuntu/preview/menu-app/frontend/apps/marketing-website-wordpress-app/web/app/uploads/sites/5/Stacker-Triple.png"
+                                    class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>La Tercera</h2>
+                                    <h4>Primero porque amamos estos colores, segundo Francia y la Tercera a casa.</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="d-flex justify-content-evenly">
+            <a href="./html/tendencia.html"><button class="btn-galeria"> NUEVA TENDENCIA
+            </button>
+        </a>
+
+            <a href="./html/galeriaDeImagenes.html"><button class="btn-galeria"> GALERIA
+            </button>
+        </a>
+        </div>
+
+
+<!-- Comienzo de las Cards -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-6">
+
+                    <div class="row">
+                        <div class="col-md-6 my-5">
+                            <div class="card">
+                                <img src="./img/Napolitano.png" class="rounded card-img-top img-fluid">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Napolitano</h5>
+                                    <p class="card-text">Doble carne a la parrilla, jamon, queso cheddar, mayonesa y tomate.</p>
+                                    <a href="./html/vermas-napo.html" class="btn btn-danger">Ver mas...</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    
+                        <div class="col-md-6 my-5">
+                            <div class="card">
+                                <img src="./img/de campo.png"
+                                    class="rounded  card-img-top img-fluid ">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">De Campo</h5>
+                                    <p class="card-text">Doble carne a la parrilla, doble cheddar, tomate seco y lechuga.</p>
+                                    <a href="./html/vermas-decam.html" class="btn btn-danger">Ver mas...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 my-5">
+                            <div class="card">
+                                <img src="./img/2.0.png" class="rounded card-img-top img-fluid"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center" >Burger 2.0</h5>
+                                    <p class="card-text">Doble carne a la parrilla, cebolla caramelizada y queso cheddar.</p>
+                                    <a href="./html/vermas-2.0.html" class="btn btn-danger">Ver mas...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 my-5">
+                            <div class="card">
+                                <img src="./img/cangreburger.png" class="rounded card-img-top img-fluid"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">La CangreBurger</h5>
+                                    <p class="card-text">Carne a la parrilla, cebolla caramelizada y salsa golf.</p>
+                                    <a href="./html/vermas-cangre.html" class="btn btn-danger">Ver mas...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 my-5">
+                            <div class="card">
+                                <img src="./img/Crispy-Chicken.png"
+                                    class="rounded card-img-top img-fluid img-fluid" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pollo Crispy</h5>
+                                    <p class="card-text">Pollo crispy simple, pepinos, cebolla, lechuga, tomate y barbacoa.</p>
+                                    <a href="./html/vermas-pollo.html" class="btn btn-danger">Ver mas...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 my-5">
+                            <div class="card">
+                                <img src="./img/Aguacate.png"
+                                    class="rounded card-img-top img-fluid img-fluid" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Guacamole</h5>
+                                    <p class="card-text">Doble carne a la parrilla, guacamole, jalapeño, queso monrrey y cebollitas.</p>
+                                    <a href="./html/vermas-guaca.html" class="btn btn-danger">Ver mas...</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="container">
+                        <div class="col-md-12 my-5 ">
+
+
+
+                            <form>
+
+                                <h5 class="">Buscar Articulos</h5>
+                                <input class="form-control" type="search" placeholder="Ingrese Nombre del Producto"
+                                    aria-label="Search" required>
+                                <button class="btn btn-danger colobo my-3 " type="submit">Buscar</button>
+
+                            </form>
+
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Precio</th>
+                                        <th scope="col">Descripcion</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>La Argenta</td>
+                                        <td>$2000</td>
+                                        <td>carne, cheddar, cebolla, tomate, pepinos y lechuga.</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>La MessiBurger</td>
+                                        <td>$2300</td>
+                                        <td>bondiolita desmechada, morron salteado, cebolla.
+                                        </td>
+                                    </tr>
+                                    <tr>
+
+                                        <td>La Tercera</td>
+                                        <td>$2600</td>
+                                        <td>triple carne, queso, cheddar y panceta</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <h5 class="text-center">Clasicos</h5>
+                            <div class="col-md-12 ">
+                                <div class="row">
+
+                                    <div class="col-md-3 my-5">
+                                        <div class="card">
+                                            <img src="./img/pexels-anush-gorak-1431305.jpg"
+                                                class="rounded card-img-top img-fluid" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Casero</h5>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 my-5">
+                                        <div class="card">
+                                            <img src="./img/pexels-foodie-factor-551991.jpg"
+                                                class="rounded card-img-top img-fluid" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Clasico</h5>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3 my-5">
+                                        <div class="card">
+                                            <img src="./img/pexels-engin-akyurt-2267538.jpg"
+                                                class="rounded card-img-top img-fluid" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Chedar</h5>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3 my-5">
+                                        <div class="card">
+                                            <img src="./img/pexels-valeria-boltneva-1639562.jpg"
+                                                class="rounded card-img-top img-fluid" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Especial</h5>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="container my-5 d-none d-sm-none d-md-block">
+                        <h5 class="text-center">Espacio Publicitario</h5>
+                        <div class="col">
+                            <div id="carouselExampleCaptions" class="carousel slide">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                        aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./img/Riccisima.png" class="d-block w-100"
+                                            alt="...">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Riccisima</h5>
+                                    
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/Aguacate.png" class="d-block w-100"
+                                            alt="...">
+                                        <div class="carousel-caption d-none d-md-block">
+                                           <h5>Guacamole</h5>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/2.0.png" class="d-block w-100"
+                                            alt="..." >
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Burger 2.0</h5>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+
+
+
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row p-5 bg-danger text-white">
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <img src="./img/logo_png.png" alt="" width="70">
+                    <p class="h3">Mr. Burger</p>
+                </div>
+
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h5">Redes</p>
+                    <div><a href="./error 404/error404.html" class="text-warning"><img src="./img/facebook.png" alt=""
+                                width="35"></a></div><!-- facebook -->
+                    <div><a href="./error 404/error404.html" class="text-warning"><img src="./img/instagram.webp" alt=""
+                                width="35"></a>
+                    </div><!-- instagram -->
+                    <div><a href="./error 404/error404.html" class="text-warning"><img src="./img/tiktok.png" alt=""
+                                width="35"></a>
+                    </div>
+                    <!-- tiktok -->
+                </div>
+
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h5">Horarios</p>
+                    <div>
+                        <p class="text-warning">Lun-Vier: 11 a 22hs</p>
+                    </div>
+                    <div>
+                        <p class="text-warning">Sab-Dom: 11 a 00 hs</p>
+                    </div>
+                    <div>
+                        <p class="text-warning">SMT Virgen de la Merced 737</p>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h5">Contacto</p>
+                    <div><a href="" class="text-warning">Wsp: 3815396425</a></div>
+                    <div><a href="" class="text-warning">mr.burger@gmail.com</a></div>
+
+
+                </div>
+
+                <div class="copy">
+                    <p class="text-white text-center">Copyrght - All rights reserved 2023</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

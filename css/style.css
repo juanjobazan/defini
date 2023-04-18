@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Source+Sans+Pro:wght@300&display=swap');
+
+:root {
+    --max: 18rem
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+
+.nav {
+    background-color: #DC3545;
+}
+
+
+.nav a {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 22px;
+}
+
+.footer {
+    background-color: #DC3545;
+}
+
+.footer a {
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-size: 22px;
+}
+
+.h2 {
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+th{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 22px;
+}
+
+td{
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-size: 22px;
+}
+
+.boton{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 22px;
+}
+
+.buuton{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.form-alta{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+h1{
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-size: 22px;
+    font-weight: bold; 
+}
+
+ .btn{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 22px;
+ }
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+  }
+
+
+  img-hamburguesa{
+    max-height: 400px; 
+  }
+
+.h5-article{
+    font-weight: bold;
+}
+/* zoom de galeria */
+.zoom{
+    transition:transform .2s;
+ }
+
+ .zoom:hover{
+    transform: scale(1.5);
+ }
+ 
+ /* button galeria y tendencias */
+ .btn-galeria{
+    padding: 0.6em 1em;
+    border: 4px solid #DC3545;
+    transition: ease-in-out 0.3s;
+    background-color: transparent;
+    color: #DC3545;
+    font-weight: bolder;
+    font-size: 16px;
+   }
+   
+.btn-galeria:hover {
+    transform: scale(1.2) rotate(10deg);
+    background-color: #DC3545;
+    color: white;
+   }
+/* estrellitas */
+   .rating:not(:checked) > input {
+    position: absolute;
+    appearance: none;
+  }
+  
+  .rating:not(:checked) > label {
+    float: right;
+    cursor: pointer;
+    font-size: 50px;
+    color: #666;
+  }
+  
+  .rating:not(:checked) > label:before {
+    content: '★';
+  }
+  
+  /* estrellas */
+  .rating > input:checked + label:hover,
+  .rating > input:checked + label:hover ~ label,
+  .rating > input:checked ~ label:hover,
+  .rating > input:checked ~ label:hover ~ label,
+  .rating > label:hover ~ input:checked ~ label {
+    color: #e58e09;
+  }
+  
+  .rating:not(:checked) > label:hover,
+  .rating:not(:checked) > label:hover ~ label {
+    color: #ff9e0b;
+  }
+  
+  .rating > input:checked ~ label {
+    color: #ffa723;
+  }
+  

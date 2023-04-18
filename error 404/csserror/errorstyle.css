@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.section{
+    min-width: 450px;
+    text-align: center;
+}
+    
+
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    color: rgb(24, 129, 50);
+}
+
+/* Adaptables Responsivos */
+@media screen and (min-width: 700px) {
+    .imagen-ovni{
+        max-width: 600px;
+    }
+    
+}
